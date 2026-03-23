@@ -8,13 +8,15 @@ This repository contains a MATLAB implementation of a hybrid pipeline for estima
 
 ## Method Overview
 
+Main function is hybrid_RPRG_VNCMD_NCME
+
 Pipeline (high level):
 
 1. Compute time–frequency representation (STFT)
-2. Extract strong-mode ridges via sequential ridge extraction, then **RPRG regrouping** to handle crossings
+2. Extract strong-mode ridges via sequential ridge extraction, then **RPRG** to handle crossings
 3. (Optional) refine ridge initialization with VNCMD
-4. Run **NCME_multi** on the original signal to jointly refine strong modes
-5. Add weak modes incrementally: detect ridge on the residual, then re-run **global NCME_multi** for joint refinement
+4. Use **NCME_multi** on the original signal to jointly refine strong modes
+5. Add weak modes incrementally: detect ridge on the residual, then re-run **NCME_multi** for joint refinement
 
 ---
 
