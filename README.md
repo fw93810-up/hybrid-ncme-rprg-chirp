@@ -28,6 +28,7 @@ run("test6.m")
 
 ### (B) Crossing case: regrouping + joint refinement
 run("Test3.m")
+
 ![Crossing](figures/fig_cross.png)
 
 ### (C) Multiple crossings: refined IF tracking
