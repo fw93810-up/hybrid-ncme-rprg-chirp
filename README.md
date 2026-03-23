@@ -29,9 +29,7 @@ Pipeline (high level):
 ### (C) Multiple crossings: refined IF tracking
 ![Multi-crossing](figures/fig_multicross.png)
 
-> TODO (optional): add a quantitative table/curve (e.g., residual energy, IF error, weak-mode recall vs SNR).
 
----
 
 ## Quick Start
 
