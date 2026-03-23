@@ -46,4 +46,19 @@ run("testncme2.m")
 
 > **Note:** Some dependencies are external implementations. See **Acknowledgements** below.
 
+## References / Acknowledgements
+
+This project builds on the following methods and papers:
+
+- **NCME (Nonlinear Chirp Mode Estimation)** — sparse/greedy nonlinear chirp mode estimation with an efficient ADMM implementation.  
+  X. Tu, J. Swärd, A. Jakobsson, and F. Li, *“Estimating nonlinear chirp modes exploiting sparsity,”* Signal Processing, 183, 107952, 2021.
+
+- **VNCMD (Variational Nonlinear Chirp Mode Decomposition)** — variational demodulation-based decomposition for wide-band nonlinear chirp modes (optional refinement/smoothing in this repo).  
+  S. Chen, X. Dong, Z. Peng, W. Zhang, and G. Meng, *“Nonlinear Chirp Mode Decomposition: A Variational Method,”* IEEE Transactions on Signal Processing, 65(22), 2017.
+
+- **RPRG (Ridge Path Regrouping)** — ridge extraction and regrouping for overlapped/crossing components in the time–frequency plane.  
+  S. Chen, X. Dong, G. Xing, Z. Peng, W. Zhang, and G. Meng, *“Separation of Overlapped Non-Stationary Signals by Ridge Path Regrouping and Intrinsic Chirp Component Decomposition,”* IEEE Sensors Journal, 17(18), 2017.
+
+If you use this code in academic work, please cite the papers above.
+
 
