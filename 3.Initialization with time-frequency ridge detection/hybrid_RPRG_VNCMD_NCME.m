@@ -15,7 +15,7 @@ function out = hybrid_RPRG_VNCMD_NCME(Sig, fs, cfg)
 %       cfg.Ridge.delta, cfg.Ridge.beta_ridge, cfg.Ridge.bw
 %       cfg.RPRG.thrf_scale
 %       cfg.VNCMD.use, cfg.VNCMD.alpha, cfg.VNCMD.beta, cfg.VNCMD.var, cfg.VNCMD.tol
-%       cfg.NCME.lambda, cfg.NCME.beta, cfg.NCME.tol
+%       cfg.NCME.lambda, cfg.NCME.beta, cfg.NCME.tol, cfg.NCME.maxIter
 %
 % 输出 out 结构体（见函数末尾）
 
@@ -120,7 +120,7 @@ for k = (K_strong+1) : num_total
     % (3) 在原始信号上，对 K_cur 条模态做一次全局多模态 NCME_multi
     fprintf('NCME_multi: global phase, K = %d\n', K_cur);
     [IFmset_k, IA_k, smset_k] = NCME_multi(Sig, fs, eIF_init_k, ...
-                                           lambda_ncme, beta_ncme, tol_ncme);
+                                           lambda_ncme, beta_ncme, tol_ncme, cfg.NCME.maxIter);
 
     IF_ref    = IFmset_k(:,:,end);   % K_cur × N
     modes_ref = smset_k(:,:,end);    % K_cur × N
