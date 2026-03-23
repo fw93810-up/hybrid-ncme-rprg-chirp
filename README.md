@@ -1,5 +1,7 @@
 # Hybrid RPRG-Initialized NCME for Nonlinear Chirp Mode Estimation
 
+**Note:** This work is based on and inspired by NCME (Tu et al., 2021), VNCMD (Chen et al., 2017), and RPRG (Chen et al., 2017).
+
 This repository contains a MATLAB implementation of a hybrid pipeline for estimating and reconstructing multi-component **nonlinear chirp** modes under **crossings** and **large dynamic range**, where weak modes are often buried by residual artifacts from strong modes.
 
 **Core idea:** use **RPRG** for crossing-aware ridge initialization, then apply **NCME (ADMM-style multi-mode joint refinement)** to jointly refine IF trajectories and reconstruct modes, improving weak-mode recovery.
