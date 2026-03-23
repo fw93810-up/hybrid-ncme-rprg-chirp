@@ -23,12 +23,15 @@ Pipeline (high level):
 ## Results (Examples)
 
 ### (A) Strong/weak separation + reconstruction
+run("test6.m")
 ![Strong/weak separation](figures/fig_strongweak_combo.png)
 
 ### (B) Crossing case: regrouping + joint refinement
+run("Test3.m")
 ![Crossing](figures/fig_cross.png)
 
 ### (C) Multiple crossings: refined IF tracking
+run("testncme2.m")
 ![Multi-crossing](figures/fig_multicross.png)
 
 
