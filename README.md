@@ -37,7 +37,6 @@ run("testncme2.m")
 
 
 
-## Quick Start
 
 ### Requirements
 - MATLAB R20XXa (tested on: MATLAB R2025b (Windows 11))
